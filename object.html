@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+
+    <label for="author">Author</label>
+    <input type="text" name="author" id="author">
+
+    <label for="title">Title</label>
+    <input type="text" name="title" id="title">
+
+    <button id="add">Add Data</button>    
+
+    
+
+    <script>
+    //     let car ={
+    //     brand:"maruthi",
+    //     yearOfManufacture :2022,
+    //     color:"silver",
+    //     variant:"petrol",
+    //     model:"SUV"
+    // }
+
+    let bookAuthor = document.getElementById('author'),
+        bookTitle = document.getElementById('title'),
+        addData = document.getElementById('add');
+        let book={}
+        // console.log("data : " + (bookAuthor.value));
+        
+        // let book, book1;
+        function usrData(){
+            book[bookAuthor.value]=bookTitle.value;
+            console.log(book)
+            
+            }
+       
+
+        
+        addData.addEventListener("click",usrData);
+
+    </script>
+</body>
+</html>
